@@ -8,17 +8,30 @@ public class Hotel implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	@org.kie.api.definition.type.Label("Breakfast Included")
 	private java.lang.Boolean breakfastIncluded;
+	@org.kie.api.definition.type.Label("Duration")
 	private java.lang.Integer duration;
+	@org.kie.api.definition.type.Label("Hotel Id")
 	private java.lang.String hotelId;
+	@org.kie.api.definition.type.Label("Hotel Name")
 	private java.lang.String hotelName;
+	@org.kie.api.definition.type.Label("Location")
 	private java.lang.String location;
+	@org.kie.api.definition.type.Label("Price Discount")
 	private java.lang.Integer priceDiscount;
-	private java.lang.Integer roomPrice;
+	@org.kie.api.definition.type.Label("Room Price")
+	private java.lang.String roomPrice;
+	@org.kie.api.definition.type.Label("Room Type")
 	private java.lang.String roomType;
+	@org.kie.api.definition.type.Label("Check In Date")
 	private java.lang.String checkInDate;
+	@org.kie.api.definition.type.Label("Check Out Date")
 	private java.lang.String checkOutDate;
+	@org.kie.api.definition.type.Label("Booking Id")
 	private java.lang.String bookingId;
+
+	@org.kie.api.definition.type.Label(value = "Booking Status")
 	private java.lang.String bookingStatus;
 
 	public Hotel() {
@@ -72,11 +85,11 @@ public class Hotel implements java.io.Serializable {
 		this.priceDiscount = priceDiscount;
 	}
 
-	public java.lang.Integer getRoomPrice() {
+	public java.lang.String getRoomPrice() {
 		return this.roomPrice;
 	}
 
-	public void setRoomPrice(java.lang.Integer roomPrice) {
+	public void setRoomPrice(java.lang.String roomPrice) {
 		this.roomPrice = roomPrice;
 	}
 
@@ -123,7 +136,7 @@ public class Hotel implements java.io.Serializable {
 	public Hotel(java.lang.Boolean breakfastIncluded,
 			java.lang.Integer duration, java.lang.String hotelId,
 			java.lang.String hotelName, java.lang.String location,
-			java.lang.Integer priceDiscount, java.lang.Integer roomPrice,
+			java.lang.Integer priceDiscount, java.lang.String roomPrice,
 			java.lang.String roomType, java.lang.String checkInDate,
 			java.lang.String checkOutDate, java.lang.String bookingId,
 			java.lang.String bookingStatus) {

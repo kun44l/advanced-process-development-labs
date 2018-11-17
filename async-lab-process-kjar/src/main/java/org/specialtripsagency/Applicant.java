@@ -10,7 +10,7 @@ public class Applicant implements java.io.Serializable {
 
 	@org.kie.api.definition.type.Label(value = "Name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "email")
+	@org.kie.api.definition.type.Label(value = "Email Address")
 	private java.lang.String emailAddress;
 	@org.kie.api.definition.type.Label(value = "Number of Travelers")
 	private java.lang.Integer numberOfTravelers;

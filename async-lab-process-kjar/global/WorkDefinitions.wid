@@ -79,6 +79,19 @@
      "displayName" : "Decision Task",
      "icon" : "defaultdecisionicon.png",
      "category" : "Decision tasks"
-   ]
+   ],
+   
+   [
+    "name" : "CreditCardPaymentService",
+    "parameters" : [
+        "payment" : new ObjectDataType()
+    ],
+    "results" : [
+        "paymentResult" : new ObjectDataType(),
+    ],
+    "displayName" : "Payment Service",
+    "icon" : "dollar.png",
+    "category": "Payment"
+  ],
 
 ]
