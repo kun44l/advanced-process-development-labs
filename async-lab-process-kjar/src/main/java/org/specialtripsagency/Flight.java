@@ -8,27 +8,16 @@ public class Flight implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Carrier")
 	private java.lang.String carrier;
-	@org.kie.api.definition.type.Label(value = "Flight Number")
-	private java.lang.String flightNr;
-	@org.kie.api.definition.type.Label(value = "Price Discount")
+	private String flightNr;
 	private java.lang.Integer priceDiscount;
-	@org.kie.api.definition.type.Label(value = "Rate Per Person")
 	private java.lang.Integer ratePerPerson;
-	@org.kie.api.definition.type.Label(value = "Return Date")
 	private java.lang.String returnDate;
-	@org.kie.api.definition.type.Label(value = "Start City")
 	private java.lang.String startCity;
-	@org.kie.api.definition.type.Label(value = "Target City")
 	private java.lang.String targetCity;
-	@org.kie.api.definition.type.Label(value = "Travel Date")
 	private java.lang.String travelDate;
-	@org.kie.api.definition.type.Label(value = "Travel Class")
 	private java.lang.String travelClass;
-	@org.kie.api.definition.type.Label(value = "Booking Status")
 	private java.lang.String bookingStatus;
-	@org.kie.api.definition.type.Label(value = "Booking Id")
 	private java.lang.String bookingId;
 
 	public Flight() {
@@ -40,14 +29,6 @@ public class Flight implements java.io.Serializable {
 
 	public void setCarrier(java.lang.String carrier) {
 		this.carrier = carrier;
-	}
-
-	public java.lang.String getFlightNr() {
-		return this.flightNr;
-	}
-
-	public void setFlightNr(java.lang.String flightNr) {
-		this.flightNr = flightNr;
 	}
 
 	public java.lang.Integer getPriceDiscount() {
@@ -120,6 +101,14 @@ public class Flight implements java.io.Serializable {
 
 	public void setBookingId(java.lang.String bookingId) {
 		this.bookingId = bookingId;
+	}
+
+	public java.lang.String getFlightNr() {
+		return this.flightNr;
+	}
+
+	public void setFlightNr(java.lang.String flightNr) {
+		this.flightNr = flightNr;
 	}
 
 	public Flight(java.lang.String carrier, java.lang.String flightNr,

@@ -8,24 +8,12 @@ public class BookingObject implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Booking Id")
-	private java.lang.String bookingId;
-	@org.kie.api.definition.type.Label(value = "Applicant")
 	private org.specialtripsagency.Applicant applicant;
-	@org.kie.api.definition.type.Label(value = "Flight")
+	private java.lang.String bookingId;
 	private org.specialtripsagency.Flight flight;
-	@org.kie.api.definition.type.Label(value = "Hotel")
 	private org.specialtripsagency.Hotel hotel;
 
 	public BookingObject() {
-	}
-
-	public java.lang.String getBookingId() {
-		return this.bookingId;
-	}
-
-	public void setBookingId(java.lang.String bookingId) {
-		this.bookingId = bookingId;
 	}
 
 	public org.specialtripsagency.Applicant getApplicant() {
@@ -34,6 +22,14 @@ public class BookingObject implements java.io.Serializable {
 
 	public void setApplicant(org.specialtripsagency.Applicant applicant) {
 		this.applicant = applicant;
+	}
+
+	public java.lang.String getBookingId() {
+		return this.bookingId;
+	}
+
+	public void setBookingId(java.lang.String bookingId) {
+		this.bookingId = bookingId;
 	}
 
 	public org.specialtripsagency.Flight getFlight() {
@@ -52,12 +48,11 @@ public class BookingObject implements java.io.Serializable {
 		this.hotel = hotel;
 	}
 
-	public BookingObject(java.lang.String bookingId,
-			org.specialtripsagency.Applicant applicant,
-			org.specialtripsagency.Flight flight,
+	public BookingObject(org.specialtripsagency.Applicant applicant,
+			java.lang.String bookingId, org.specialtripsagency.Flight flight,
 			org.specialtripsagency.Hotel hotel) {
-		this.bookingId = bookingId;
 		this.applicant = applicant;
+		this.bookingId = bookingId;
 		this.flight = flight;
 		this.hotel = hotel;
 	}

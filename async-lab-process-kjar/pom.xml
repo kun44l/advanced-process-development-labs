@@ -2,12 +2,12 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.acme</groupId>
-  <artifactId>async-lab-process-kjar</artifactId>
+  <groupId>com.redhat.gpte-bpms-advanced</groupId>
+  <artifactId>signalling-lab-process-kjar</artifactId>
   <version>1.0.0</version>
   <packaging>kjar</packaging>
-  <name>async-lab-process-kjar</name>
-  <description>Advanced Process Development - Example for asynchronous execution.</description>
+  <name>signalling-lab-process-kjar</name>
+  <description></description>
   <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
